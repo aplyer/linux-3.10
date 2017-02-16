@@ -11,7 +11,7 @@ obj-vdso32 := $(addprefix $(obj)/, $(obj-vdso32))
 
 GCOV_PROFILE := n
 
-ccflags-y := -shared -fPIC -fno-common -fno-builtin -march=armv7-a
+ccflags-y := -shared -fPIC -fomit-frame-pointer -fno-common -fno-builtin -march=armv7-a
 ccflags-y += -nostdlib -Wl,-soname=linux-vdso32.so.1 \
 		$(call cc-ldoption, -Wl$(comma)--hash-style=sysv)
 asflags-y := -D__VDSO32__ -s

@@ -107,6 +107,61 @@ static struct uvc_format_desc uvc_fmts[] = {
 		.guid		= UVC_GUID_FORMAT_Y16,
 		.fcc		= V4L2_PIX_FMT_Y16,
 	},
+ 	{
+ 		.name		= "Greyscale 8 L/R (Y8I)",
+ 		.guid		= UVC_GUID_FORMAT_Y8I,
+ 		.fcc		= V4L2_PIX_FMT_Y8I,
+ 	},
+ 	{
+ 		.name		= "Greyscale 12 L/R (Y12I)",
+ 		.guid		= UVC_GUID_FORMAT_Y12I,
+ 		.fcc		= V4L2_PIX_FMT_Y12I,
+ 	},
+ 	{
+ 		.name		= "Depth data 16-bit (Z16)",
+ 		.guid		= UVC_GUID_FORMAT_Z16,
+ 		.fcc		= V4L2_PIX_FMT_Z16,
+ 	},
+ 	{
+ 		.name		= "Raw data 10-bit (RW10)",
+ 		.guid		= UVC_GUID_FORMAT_RW10,
+ 		.fcc		= V4L2_PIX_FMT_RW10,
+ 	},
+ 	{
+ 		.name		= "Depth 16-bit (INVZ)",
+ 		.guid		= UVC_GUID_FORMAT_INVZ,
+ 		.fcc		= V4L2_PIX_FMT_INVZ,
+ 	},
+ 	{
+ 		.name		= "Depth:IR 16:8 24-bit (INZI)",
+ 		.guid		= UVC_GUID_FORMAT_INZI,
+ 		.fcc		= V4L2_PIX_FMT_INZI,
+ 	},
+ 	{
+ 		.name		= "Depth 16-bit (INVR)",
+ 		.guid		= UVC_GUID_FORMAT_INVR,
+ 		.fcc		= V4L2_PIX_FMT_INVR,
+ 	},
+ 	{
+ 		.name		= "Depth:IR 16:8 24-bit (INRI)",
+ 		.guid		= UVC_GUID_FORMAT_INRI,
+ 		.fcc		= V4L2_PIX_FMT_INRI,
+ 	},
+ 	{
+  		.name		= "Infrared 8-bit (INVI)",
+ 		.guid		= UVC_GUID_FORMAT_INVI,
+ 		.fcc		= V4L2_PIX_FMT_INVI,
+ 	},
+ 	{
+  		.name		= "FlickerIR 8-bit (RELI)",
+ 		.guid		= UVC_GUID_FORMAT_RELI,
+ 		.fcc		= V4L2_PIX_FMT_RELI,
+ 	},
+ 	{
+ 		.name		= "BGGR Bayer (BY8 )",
+ 		.guid		= UVC_GUID_FORMAT_BY8,
+ 		.fcc		= V4L2_PIX_FMT_SBGGR8,
+	},
 	{
 		.name		= "RGB Bayer",
 		.guid		= UVC_GUID_FORMAT_BY8,
@@ -121,7 +176,7 @@ static struct uvc_format_desc uvc_fmts[] = {
 		.name		= "H.264",
 		.guid		= UVC_GUID_FORMAT_H264,
 		.fcc		= V4L2_PIX_FMT_H264,
-	},
+	}
 };
 
 /* ------------------------------------------------------------------------
